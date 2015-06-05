@@ -52,12 +52,12 @@ angular.module('calinioApp')
 
     /////////////////////////////
 
-    $scope.getUserIp = function() {
-      $http.get('http://ipinfo.io/json')
-      .success(function(res){
-        $scope.userIp = res.ip;
-      });;
-    };
+    //$scope.getUserIp = function() {
+      //$http.get('http://ipinfo.io/json')
+      //.success(function(res){
+        //$scope.userIp = res.ip;
+      //});;
+    //};
 
-    $scope.getUserIp();
+    //$scope.getUserIp();
   });
