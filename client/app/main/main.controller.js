@@ -52,6 +52,7 @@ angular.module('calinioApp')
 
     /////////////////////////////
 
+    //test comment
     //$scope.getUserIp = function() {
       //$http.get('http://ipinfo.io/json')
       //.success(function(res){
