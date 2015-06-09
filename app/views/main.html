@@ -16,7 +16,7 @@
       <h2>Adventures</h2>
       <p class="lead adventure-title">Software Engineer, BLiNQ Media (May 2014 - June 2015)</p>
       <div class="adventure-desc">
-        - Played a lead role in building front-end layer of an application from the ground up!<br>
+        - Played a lead role in architecting and building front-end layer of an application from the ground up!<br>
         - Extensive time spent using: AngularJS, Ruby on Rails, Bower, Grunt, ProtractorJS, Git, Vim, Tmux
       </div>
     </div>
@@ -30,7 +30,7 @@
       <div ng-repeat="skill in skills">
         <div class="col-md-3 col-sm-6">
           {{skill.name}}
-          <div ng-init="rating = skill.rating" class="gold"><rating ng-model="rating" readonly="true" max="5" readonly="true"></rating></div>
+          <span class="pull-right star-color" ng-repeat="i in getNumber(skill.rating) track by $index"><i class="fa fa-star"></i>&nbsp; </span>
           <br>
         </div>
       </div>
