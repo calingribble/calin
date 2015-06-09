@@ -60,3 +60,14 @@ ul {
 .star-color {
   color: #ffea83;
 }
+.padding-sm {
+  padding: 5px;
+}
+.adventure-title {
+  font-size: 2rem;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.adventure-desc {
+  padding-left: 1rem;
+}
