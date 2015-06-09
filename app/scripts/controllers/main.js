@@ -21,13 +21,19 @@ angular.module('calinioApp')
       { "name" : "Vim", "rating" : 3 },
       { "name" : "Mongoose", "rating" : 3 },
       { "name" : "MongoDB", "rating" : 3 },
-      { "name" : "Javascript", "rating" : 4 },
+      { "name" : "Javascript", "rating" : 3 },
       { "name" : "HTML", "rating" : 4 },
       { "name" : "ExpressJS", "rating" : 3 },
       { "name" : "NodeJS", "rating" : 3 },
       { "name" : "AngularJS", "rating" : 4 },
-      { "name" : "Ruby on Rails", "rating" : 2}
+      { "name" : "Ruby on Rails", "rating" : 2 },
+      { "name" : "ProtractorJS", "rating" : 3 }
     ];
+
+
+    $scope.isInt = function (num) {
+         return num % 1 === 0;
+    }
 
     $scope.getNumber = function(num) {
       return new Array(num);
