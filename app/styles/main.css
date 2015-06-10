@@ -13,7 +13,7 @@ body {
   font-size: 1.5rem;
   color: #dbdbdb;
   background-color: #4d4d4d;
-  background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(120deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
+  background-image: url(http://www.transparenttextures.com/patterns/60-lines.png);
   background-size: 70px 120px;
 }
 .thing-form {
