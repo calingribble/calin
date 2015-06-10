@@ -17,7 +17,7 @@ describe('Controller: MainCtrl', function () {
   }));
 
   it('should attach a list of skills to the scope', function () {
-    expect(scope.skills.length).toBe(12);
+    expect(scope.skills.length).toBe(14);
   });
 
   describe('#getArrayFromNumber()', function () {

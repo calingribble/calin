@@ -2,7 +2,8 @@
 
 my resume app
 
-CI: https://codeship.com/projects/84847
+[ ![Codeship Status for
+calingribble/calinio](https://codeship.com/projects/82c656d0-f13b-0132-ce7c-1edd808e164a/status?branch=master)](https://codeship.com/projects/84847)
 
 ## Build & development
 

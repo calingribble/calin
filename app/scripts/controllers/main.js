@@ -10,6 +10,8 @@
 angular.module('calinioApp')
   .controller('MainCtrl', function ($scope) {
     $scope.skills = [
+      { "name" : "Heroku", "rating" : 3 },
+      { "name" : "Codeship", "rating" : 2 },
       { "name" : "Less/CSS", "rating" : 4 },
       { "name" : "Git", "rating" : 3 },
       { "name" : "Vim", "rating" : 3 },
