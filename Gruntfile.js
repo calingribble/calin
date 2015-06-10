@@ -396,7 +396,6 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'less',
       'clean:server',
       'wiredep',
       'concurrent:server',
@@ -434,8 +433,7 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin',
-    'less'
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
