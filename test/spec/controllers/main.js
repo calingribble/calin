@@ -16,7 +16,15 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach a list of skills to the scope', function () {
+    expect(scope.skills.length).toBe(12);
+  });
+
+  describe('#getArrayFromNumber()', function () {
+    it('should return an array of length 5 when given the integer 5', function () {
+      var numberArray = scope.getArrayFromNumber(5);
+      expect(numberArray.length).toBe(5);
+    });
   });
 });
+

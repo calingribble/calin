@@ -9,12 +9,6 @@
  */
 angular.module('calinioApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
     $scope.skills = [
       { "name" : "Less/CSS", "rating" : 4 },
       { "name" : "Git", "rating" : 3 },
@@ -30,12 +24,7 @@ angular.module('calinioApp')
       { "name" : "ProtractorJS", "rating" : 3 }
     ];
 
-
-    $scope.isInt = function (num) {
-         return num % 1 === 0;
-    }
-
-    $scope.getNumber = function(num) {
+    $scope.getArrayFromNumber = function(num) {
       return new Array(num);
     }
   });

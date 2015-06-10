@@ -1,59 +1,50 @@
 <div>
-<header>
-  <div class="container">
-    <h1 class="name-header">Calin Gribble</h1>
-    <p class="lead">Computer Scientist
-    <br><a href="https://www.linkedin.com/pub/calin-gribble/91/28a/b29"><i class="fa fa-linkedin-square"></i></a>&nbsp;
-    <a href="https://github.com/calingribble"><i class="fa fa-github"></i></a>&nbsp;
-    <!--<i class="fa fa-file-text-o"></i>-->
-    </p>
-  </div>
-</header>
+  <header>
+    <div class="container">
+      <h1 class="name-header">Calin Gribble</h1>
+      <p class="lead">Computer Scientist
+      <br><a href="https://www.linkedin.com/pub/calin-gribble/91/28a/b29"><i class="fa fa-linkedin-square"></i></a>&nbsp;
+      <a href="https://github.com/calingribble"><i class="fa fa-github"></i></a>&nbsp;
+      <!--<i class="fa fa-file-text-o"></i>-->
+      </p>
+    </div>
+  </header>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h2>Adventures</h2>
-      <p class="lead adventure-title">Software Engineer, BLiNQ Media (May 2014 - June 2015)</p>
-      <div class="adventure-desc">
-        - Played a lead role in architecting and building front-end layer of an application from the ground up!<br>
-        - Extensive time spent using: AngularJS, Ruby on Rails, Bower, Grunt, ProtractorJS, Git, Vim, Tmux, Bash
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Adventures</h2>
+        <p class="lead adventure-title">Software Engineer, BLiNQ Media (May 2014 - June 2015)</p>
+        <div class="adventure-desc">
+          - Played a lead role in architecting and building front-end layer of an application from the ground up!<br>
+          - Extensive time spent using: AngularJS, Ruby on Rails, Bower, Grunt, ProtractorJS, Git, Vim, Tmux, Bash
+        </div>
+        <br>
+        <p class="lead adventure-title">Computer Science Undergrad, Georgia Southern University (January 2013 - May 2014)</p>
+        <div class="adventure-desc">
+          - Lead multiple teams of three or more developers to completion of complex projects in a semester timeframe<br>
+          - Awarded: President's List, Dean's List, Software Engineering Certification, and BS of Computer Science<br>
+          - Extensive time spent using: Java, Eclipse, Javascript, NodeJS, MongoDB
+        </div>
       </div>
-      <br>
-      <p class="lead adventure-title">Computer Science Undergrad, Georgia Southern University (January 2013 - May 2014)</p>
-      <div class="adventure-desc">
-        - Lead multiple teams of three or more developers to completion of complex projects in a semester timeframe<br>
-        - Awarded: President's List, Dean's List, Software Engineering Certification, and BS of Computer Science<br>
-        - Extensive time spent using: Java, Eclipse, Javascript, NodeJS, MongoDB
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Toolbelt</h2>
+        <div ng-repeat="skill in skills | orderBy :'rating':true">
+          <div class="col-md-3 col-sm-6">
+            {{skill.name}}
+            <span class="pull-right star-color" ng-repeat="i in getArrayFromNumber(skill.rating) track by $index"><i class="fa fa-star"></i>&nbsp; </span><span ng-if="!isInt(skill.rating)"></span>
+            <br>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <br>
 
-  <div class="row">
-    <div class="col-lg-12">
-      <h2>Toolbelt</h2>
-      <div ng-repeat="skill in skills | orderBy :'rating':true">
-        <div class="col-md-3 col-sm-6">
-          {{skill.name}}
-          <span class="pull-right star-color" ng-repeat="i in getNumber(skill.rating) track by $index"><i class="fa fa-star"></i>&nbsp; </span><span ng-if="!isInt(skill.rating)"></span>
-          <br>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--<div class="container">-->
-  <!--<div class="row">-->
-    <!--<div class="col-lg-6">-->
-      <!--<h1 class="page-header">Features:</h1>-->
-      <!--<ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">-->
-        <!--<li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>-->
-      <!--</ul>-->
-    <!--</div>-->
-  <!--</div>-->
-
-  <!--<form class="thing-form">-->
 </div>
