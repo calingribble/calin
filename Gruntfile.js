@@ -113,25 +113,6 @@ module.exports = function (grunt) {
         }
       }
     },
-    //less task
-    less: {
-      development: {
-        options: {
-          paths: ["assets/css"]
-        },
-        files: {
-          "<%= yeoman.app %>/styles/main.css": "<%= yeoman.app %>/styles/{,*/}*.less"
-        }
-      },
-      production: {
-        options: {
-          paths: ["assets/css"],
-        },
-        files: {
-          "<%= yeoman.app %>/styles/main.css": "<%= yeoman.app %>/styles/{,*/}*.less"
-        }
-      }
-    },
 
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
